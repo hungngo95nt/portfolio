@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import TopBar from '../../layouts/TopBar/Index'
 import Main from '../../layouts/Main/Index'
 

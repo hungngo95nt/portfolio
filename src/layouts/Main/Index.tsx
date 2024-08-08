@@ -1,11 +1,12 @@
 import SideBar from "../SideBar/Index";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 interface Props {
   title: string;
 }
 
-const Main = (props: Props) => {
-  const title = props.title;
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const Main = (_props: Props) => {
   return (
     <div className="flex">
       <SideBar />
