@@ -6,7 +6,7 @@ function App() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
 
   return (
-    <div className="App">
+    <div id='App'>
       <Routes>
         <Route path="/" element={ <Home/> } />
         <Route path="categories" element={ <Categories/> } />

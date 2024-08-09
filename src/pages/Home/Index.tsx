@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import TopBar from '../../layouts/TopBar/Index'
+import Header from '../../layouts/Header/Index'
 import Main from '../../layouts/Main/Index'
 
 export default class Home extends Component {
@@ -7,10 +7,10 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div>
-        <TopBar />
+      <>
+        <Header />
         <Main title='Portfolio Home' />
-      </div>
+      </>
     )
   }
 }
