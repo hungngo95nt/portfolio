@@ -1,18 +1,19 @@
-import Home from './pages/Home/Index'
-import Categories from './pages/Categories/Index'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom';
+import Header from './components/common/Header';
+import ListComponents from './components/common/ListComponents';
+import Buttons from './components/buttons/Buttons';
 
 function App() {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-
   return (
-    <div id='App'>
+    <div id="App">
+      <Header />
       <Routes>
-        <Route path="/" element={ <Home/> } />
-        <Route path="categories" element={ <Categories/> } />
+        <Route index element={<ListComponents />} />
+        <Route path="components/buttons" element={<Buttons />} />
+        <Route path="*" element={<ListComponents />} />
       </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
