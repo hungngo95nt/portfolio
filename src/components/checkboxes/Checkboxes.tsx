@@ -3,7 +3,7 @@ import SolidButton from './SolidButton';
 import { Smiley, Paperclip } from '@phosphor-icons/react';
 import OutlinedButton from './OutlinedButton';
 
-const Buttons: FunctionComponent = () => {
+const Checkboxes: FunctionComponent = () => {
     const [counter, setCounter] = useState(0);
     return (
         <div className="flex flex-col gap-4 w-3/4 mt-20 p-4">
@@ -34,4 +34,4 @@ const Buttons: FunctionComponent = () => {
     );
 };
 
-export default Buttons;
+export default Checkboxes;
