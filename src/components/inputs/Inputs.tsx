@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent, useState } from 'react';
 import { Mailbox, FileSearch } from '@phosphor-icons/react';
 import OutLinedInput from './OutLinedInput';
 import SearchInput from './SearchInput';
@@ -10,6 +10,17 @@ const Inputs: FunctionComponent = () => {
     { code: '+84', name: 'VN' },
     // Add more country codes as needed
   ];
+
+  const [message, setMessage] = useState('');
+
+  const handleEnter = (data: string) => {
+    setMessage(data);
+
+    if (message) {
+      alert(`input value: ${message}`);
+    }
+  };
+
   return (
     <div className="flex flex-row gap-4 w-3/4 mt-20 p-4">
       <div id="1">
@@ -19,6 +30,7 @@ const Inputs: FunctionComponent = () => {
         <div className="flex flex-row gap-4 border-2 rounded mt-4">
           <div className="m-4">
             <OutLinedInput
+              onEnter={handleEnter}
               type="email"
               title="Email"
               icon={<Mailbox className="w-4 h-4" />}

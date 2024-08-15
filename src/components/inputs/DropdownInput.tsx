@@ -19,12 +19,11 @@ const DropdownInput: FunctionComponent<{
       {title}
     </label>
     <div className="mt-2 flex flex-row rounded-md shadow-sm">
-      <div className="pointer-events-none inset-y-0 left-0 flex items-center w-1/5">
+      <div className="inset-y-0 left-0 flex items-center w-1/5">
         <span className="rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm px-3 py-2 w-full">
           <select
             id="country-code"
             className="bg-gray-50 border-none focus:ring-0"
-            name={dataList![0].name || ''}
           >
             {dataList?.map(({ code, name }) => (
               <option key={code} value={code}>
