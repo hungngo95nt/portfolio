@@ -1,11 +1,23 @@
-import { FunctionComponent, ReactNode } from 'react';
+import { FunctionComponent, ReactNode, useState } from 'react';
 
 const SearchInput: FunctionComponent<{
+  onEnter: (value: string) => void;
   type: string;
   title: string;
   icon?: ReactNode;
   placeholder: string;
-}> = ({ type, title, icon, placeholder }) => {
+}> = ({ onEnter, type, title, icon, placeholder }) => {
+  const [inputValue, setInputValue] = useState('');
+
+  const handleKeyDown = (event: {
+    key: string;
+    preventDefault: () => void;
+  }) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      onEnter(inputValue); // Pass the input value to the parent
+    }
+  };
   return (
     <div>
       <label
@@ -16,8 +28,9 @@ const SearchInput: FunctionComponent<{
       </label>
       <div className="relative mt-2 rounded-md shadow-sm">
         <input
-          id="price"
-          name="price"
+          onChange={(e) => setInputValue(e.target.value)}
+          onKeyDown={handleKeyDown}
+          value={inputValue}
           type={type}
           placeholder={placeholder}
           className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20

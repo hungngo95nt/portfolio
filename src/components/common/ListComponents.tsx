@@ -22,12 +22,6 @@ const ListComponents: FunctionComponent = () => {
         Checkboxes
       </a>
       <a
-        href="/components/radios"
-        className="text-purple-500 hover:underline hover:text-purple-600"
-      >
-        Radios
-      </a>
-      <a
         href="/components/dropdowns"
         className="text-purple-500 hover:underline hover:text-purple-600"
       >

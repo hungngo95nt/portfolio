@@ -1,14 +1,16 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent, useState } from 'react';
 
 const CircleCheckBox: FunctionComponent = () => {
+  const [ischeck, SetIscheck] = useState(false);
   return (
-    <>
+    <div className="checkbox-wrapper">
       {' '}
       <input
-        type="checkbox"
-        className="w-3 h-3  bg-[white] rounded-[50%] align-middle border-[1px] border-[solid] border-gray-500 appearance-none outline-[none] cursor-pointer"
+        type="radio"
+        checked={ischeck}
+        onClick={() => SetIscheck(!ischeck)}
       />
-    </>
+    </div>
   );
 };
 
