@@ -11,7 +11,7 @@ import React from 'react';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App key={null} type={undefined} props={Buttons} />,
+    element: <App />,
   },
   {
     path: '/components/buttons',
