@@ -7,6 +7,7 @@ import Inputs from './components/inputs/Inputs.tsx';
 import Dropdowns from './components/dropdowns/Dropdowns.tsx';
 import Checkboxes from './components/checkboxes/Checkboxes.tsx';
 import Tooltips from './components/tooltips/Tooltips.tsx';
+import Tabs from './components/tabs/Tabs.tsx';
 import React from 'react';
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: '/components/tooltips',
     element: <Tooltips />,
+  },
+  {
+    path: '/components/tabs',
+    element: <Tabs />,
   },
 ]);
 

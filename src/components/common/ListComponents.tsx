@@ -34,6 +34,12 @@ const ListComponents: FunctionComponent = () => {
       >
         Tooltips
       </Link>
+      <Link
+        to="/components/tabs"
+        className="text-purple-500 hover:underline hover:text-purple-600"
+      >
+        Tabs
+      </Link>
     </div>
   );
 };
