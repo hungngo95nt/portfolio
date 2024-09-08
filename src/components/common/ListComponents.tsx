@@ -1,7 +1,17 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const ListComponents: FunctionComponent = () => {
+  const [test, setTest] = useState<number>(1);
+
+  useEffect(() => {
+    if (test === 1) {
+      setTest(2);
+    }
+
+    console.log(test);
+  }, [test]);
+
   return (
     <div className="flex flex-col p-4 gap-2 mt-16 w-1/4">
       <Link
