@@ -9,6 +9,7 @@ import Inputs from './components/inputs/Inputs';
 import Tooltips from './components/tooltips/Tooltips';
 import Tabs from './components/tabs/Tabs';
 import Home from './pages/Home';
+import Blogs from './pages/Blogs';
 
 const App: FunctionComponent = () => {
   return (
@@ -17,7 +18,7 @@ const App: FunctionComponent = () => {
       <div id="Body" className="flex w-full">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/blogs" element={<Buttons />} />
+          <Route path="/blogs" element={<Blogs />} />
           <Route path="/components" element={<ListComponents />} />
           <Route path="/components/buttons" element={<Buttons />} />
           <Route path="/components/inputs" element={<Inputs />} />

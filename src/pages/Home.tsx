@@ -1,13 +1,13 @@
 import { FunctionComponent } from 'react';
 import icon from '../assets/unnamed.ico'; // Adjust the path as needed
+import FreelanceSection from '../resume/FreelanceSection';
+import FPTSection from '../resume/FPTSection';
 
 const Home: FunctionComponent = () => {
   return (
     <div className="flex flex-col gap-4 w-3/4 mt-20 p-4">
       <div className="justify-center">
         <div>
-          <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-          <title>Van-Hung Ngo </title>
           <style
             dangerouslySetInnerHTML={{
               __html:
@@ -167,147 +167,9 @@ const Home: FunctionComponent = () => {
                 📋&nbsp;Experience
               </h2>
               <hr id="43dfc6db-e33a-4a4b-8a12-d7c3904195d2" />
-              <div
-                id="efec1c29-5f3a-4914-8d79-4ce4cbbac5dd"
-                className="column-list"
-              >
-                <div
-                  id="f3dcd5a5-5ffb-47b8-b904-2c8ee24a7063"
-                  style={{ width: '50%' }}
-                  className="column"
-                >
-                  <p
-                    id="0536393b-474f-430f-8da9-1cc8e65d5dc0"
-                    className="block-color-blue"
-                  >
-                    <strong>Frontend Dev - Freelancer Team </strong>
-                  </p>
-                </div>
-                <div
-                  id="e12c1aa1-b872-4504-b87d-7c88e35a36e8"
-                  style={{ width: '50%' }}
-                  className="column"
-                >
-                  <p
-                    id="3a289202-5b1a-424e-8b45-83e19abc66a9"
-                    className="block-color-blue"
-                  >
-                    5/2023 - Present
-                  </p>
-                </div>
-              </div>
-              <blockquote id="f49818f8-6a2c-41bf-a808-3f7d46862c08">
-                Team size: <strong>5</strong>
-                <br />
-                Responsibility: <br />
-                <strong>Frontend</strong> <strong>Dev </strong>
-                <br />
-                Project Description: <br />
-                <strong>
-                  CRM website application for marketing company
-                  <br />
-                  <br />
-                </strong>
-                Technology:{' '}
-                <strong>React, Redux, RESTfull API, Typescript</strong>
-              </blockquote>
-              <blockquote id="11ca5b81-e264-430a-9f5d-6b6f1834631f">
-                Team size: <strong>5</strong>
-                <br />
-                Responsibility: <br />
-                <strong>Frontend</strong> <strong>Dev </strong>
-                <br />
-                Project Description: <br />
-                <strong>price-tracking website for cryptoassets</strong>
-                <br />
-                Technology: <br />
-                <strong>React, Redux, RESTfull API, Typescript</strong>
-              </blockquote>
-              <p id="663b33dd-7302-45f6-b9c0-205b653d4e49">
-                <br />
-                <br />
-                <br />
-              </p>
-              <div
-                id="db74d826-a7f8-4a57-8111-3d278c89e592"
-                className="column-list"
-              >
-                <div
-                  id="faf83c9f-fca8-4808-b75c-e56275c53054"
-                  style={{ width: '50%' }}
-                  className="column"
-                >
-                  <p
-                    id="023c7330-c8d5-4f65-b9d3-0be60cbbc26d"
-                    className="block-color-blue"
-                  >
-                    <strong>Backend Dev - FPT Software</strong>
-                  </p>
-                </div>
-                <div
-                  id="b9b7eaa6-e17e-429d-b616-9e9f0cc4d4f6"
-                  style={{ width: '50%' }}
-                  className="column"
-                >
-                  <p
-                    id="d82a5cc8-f892-4bc6-8218-752ea6968423"
-                    className="block-color-blue"
-                  >
-                    12/2021 - Present
-                  </p>
-                </div>
-              </div>
-              <blockquote id="6ace607b-2737-444b-bbef-627c979bcb2e">
-                Team size: <strong>33</strong>
-                <br />
-                Responsibility: <br />
-                <strong>Backend Dev - Sub Teamlead</strong>
-                <br />
-                Project Description: <br />
-                <strong>
-                  Web Services for Motor Corporation ( Japan region)
-                </strong>
-                <br />
-                Technology: <br />
-                <strong>
-                  C#, .NET 6, Sql Server 2019, Razor Pages, ASP.NET MVC
-                </strong>
-                <br />
-                Time line: <br />
-                <strong>12/2023 - Present</strong>
-              </blockquote>
-              <blockquote id="800a6c40-8d5f-497e-b288-210990b51fef">
-                Team size: <strong>54</strong>
-                <br />
-                Responsibility: <br />
-                <strong>Backend Dev </strong>
-                <br />
-                Project Description: <br />
-                <strong>
-                  Web Services for Motor Corporation ( Japan region)
-                </strong>
-                <br />
-                Technology: <br />
-                <strong>C#, ASP.NET MVC, JQuery</strong>
-                <br />
-                Time line: <br />
-                <strong>12/2021 - 11/2023</strong>
-              </blockquote>
-              <blockquote id="cdacaf0f-9712-431e-aecc-040b105ee152">
-                Team size: <strong>3</strong>
-                <br />
-                Responsibility: <br />
-                <strong>Trainee </strong>
-                <br />
-                Project Description: <br />
-                <strong>Fresher Academy</strong>
-                <br />
-                Technology: <br />
-                <strong>.NET technologies</strong>
-                <br />
-                Time line: <br />
-                <strong>8/2021 - 11/2021</strong>
-              </blockquote>
+              <FPTSection />
+
+              <FreelanceSection />
               <div
                 id="13a83425-d008-4d35-acbb-770febb71b3e"
                 className="column-list"
@@ -362,15 +224,7 @@ const Home: FunctionComponent = () => {
                     className="bulleted-list"
                   >
                     <li style={{ listStyleType: 'disc' }}>
-                      The Champions at FHM.JPG Football 2023 season
-                    </li>
-                  </ul>
-                  <ul
-                    id="4554d644-f1ca-496a-a22a-c64df23c9171"
-                    className="bulleted-list"
-                  >
-                    <li style={{ listStyleType: 'disc' }}>
-                      Third place at FHM.JPG Football 2024 season
+                      The Champions at FHM.JPG - Fsoft HCM Football 2023 season
                     </li>
                   </ul>
                 </div>
