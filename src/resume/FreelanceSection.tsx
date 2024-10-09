@@ -13,7 +13,7 @@ const FreelanceSection: FunctionComponent = () => {
             id="0536393b-474f-430f-8da9-1cc8e65d5dc0"
             className="block-color-blue"
           >
-            <strong>Frontend Dev - Freelancer Team </strong>
+            <strong>Frontend(ReactJS) Dev - Freelancer Team </strong>
           </p>
         </div>
         <div
@@ -42,6 +42,21 @@ const FreelanceSection: FunctionComponent = () => {
           <br />
         </strong>
         Technology: <strong>React, Redux, RESTfull API, Typescript</strong>
+        Achievements: <br />
+        <ul>
+          <li>
+            Successfully translated UI/UX designs into functional web
+            components, improving user engagement
+          </li>
+          <li>
+            Implemented state management using Redux, enhancing application
+            performance and maintainability.
+          </li>
+          <li>
+            Collaborated with backend developers to ensure seamless integration
+            of frontend and backend services.
+          </li>
+        </ul>
       </blockquote>
       <blockquote id="11ca5b81-e264-430a-9f5d-6b6f1834631f">
         Team size: <strong>5</strong>

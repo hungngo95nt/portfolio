@@ -41,8 +41,21 @@ const FPTSection: FunctionComponent = () => {
         Technology: <br />
         <strong>C#, .NET 6, Sql Server 2019, Razor Pages, ASP.NET MVC</strong>
         <br />
-        Time line: <br />
-        <strong>12/2023 - Present</strong>
+        Achievements: <br />
+        <ul>
+          <li>
+            Led a sub-team of 10 developers to successfully deliver project
+            milestones on time.
+          </li>
+          <li>
+            Improved system performance by 20% through code optimization and
+            database indexing
+          </li>
+          <li>
+            Implemented a robust error-handling mechanism, reducing system
+            downtime by 15%.
+          </li>
+        </ul>
       </blockquote>
       <blockquote id="800a6c40-8d5f-497e-b288-210990b51fef">
         Team size: <strong>54</strong>
